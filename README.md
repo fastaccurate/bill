@@ -2,9 +2,9 @@
 
 A comprehensive full-stack web application for splitting bills among friends and automating payment reminders via SMS. Built with React, Flask, PostgreSQL, and Twilio API.
 
-## ✨ Features
+##  Features
 
-### 📱 **Core Functionality**
+###  **Core Functionality**
 - **User Authentication**: Secure registration and login with JWT tokens
 - **Group Management**: Create and manage groups with role-based permissions
 - **Bill Splitting**: Multiple splitting methods (equal, exact amounts, percentages)
@@ -12,14 +12,14 @@ A comprehensive full-stack web application for splitting bills among friends and
 - **Payment Reminders**: Automated SMS reminders via Twilio API
 - **Settlement Tracking**: Track who owes what and settlement status
 
-### 🎯 **Advanced Features**
+###  **Advanced Features**
 - **Real-time Balance Calculations**: Automatic balance updates across groups
 - **Bulk Reminders**: Send payment reminders to multiple users at once
 - **Expense Analytics**: Statistics and reporting for spending patterns
 - **Responsive Design**: Mobile-first design that works on all devices
 - **Optimistic Updates**: Smooth UI interactions with real-time updates
 
-## 🏗️ **Tech Stack**
+##  **Tech Stack**
 
 ### **Frontend**
 - **React 18** - Modern UI library with hooks
@@ -271,22 +271,3 @@ bill-splitting-app/
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 **Support**
-
-For support, email support@billsplitapp.com or create an issue in the repository.
-
-## 🙏 **Acknowledgments**
-
-- [Flask](https://flask.palletsprojects.com/) - The web framework used
-- [React](https://reactjs.org/) - The frontend library
-- [Tailwind CSS](https://tailwindcss.com/) - For beautiful styling
-- [Twilio](https://www.twilio.com/) - For SMS functionality
-- [Heroicons](https://heroicons.com/) - For beautiful icons
-
----
-
-**Built with ❤️ for splitting bills and staying organized!**
