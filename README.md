@@ -263,6 +263,43 @@ bill-splitting-app/
 └── README.md
 ```
 
+bill-splitting-app/
+├── backend/
+│ ├── app/
+│ │ ├── models/
+│ │ │ - Defines the data structures (User, Group, Expense, Settlement) and how they relate to each other in the database
+│ │ ├── routes/
+│ │ │ - Contains the URL endpoints (blueprints) for authentication, group actions, expense actions, and SMS reminders
+│ │ ├── services/
+│ │ │ - Houses core business logic: one service handles complex bill-splitting math and another sends SMS via Twilio
+│ │ └── extensions.py
+│ │ - Initializes and configures shared Flask extensions (database, migrations, JWT, CORS, password hashing)
+│ ├── config.py
+│ │ - Holds environment-specific settings (database URL, secret keys, Twilio credentials, CORS origins)
+│ ├── run.py
+│ │ - Entry point that creates the Flask app and starts the server
+│ └── requirements.txt
+│ - Lists all Python libraries the backend needs to run (Flask, SQLAlchemy, Twilio, etc.)
+
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ │ - Reusable UI pieces (sidebar layout, loading spinner) used across multiple pages
+│ │ ├── pages/
+│ │ │ - Top-level screens (Dashboard/Home, Login, Group view, Expense view)
+│ │ ├── redux/
+│ │ │ - State management logic (store setup and “slices” for auth, groups, expenses)
+│ │ ├── services/
+│ │ │ - API wrappers that call the backend endpoints and handle tokens/refresh logic
+│ │ └── utils/
+│ │ - Helper functions and constants (date formatting, validation rules, app-wide settings)
+│ ├── package.json
+│ │ - Lists all JavaScript dependencies and scripts for building/running the React app
+│ └── vite.config.js
+│ - Configuration for Vite (development server, API proxy, build options)
+
+└── README.md
+
 ## 🤝 **Contributing**
 
 1. Fork the repository
