@@ -262,7 +262,7 @@ bill-splitting-app/
 │   └── vite.config.js     # Vite configuration
 └── README.md
 ```
-
+```
 bill-splitting-app/
 ├── backend/
 │ ├── app/
@@ -299,7 +299,7 @@ bill-splitting-app/
 │ - Configuration for Vite (development server, API proxy, build options)
 
 └── README.md
-
+```
 ## 🤝 **Contributing**
 
 1. Fork the repository
