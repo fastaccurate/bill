@@ -1,4 +1,4 @@
-# 🏦 Automated Bill Splitting & Payment Reminder App
+#  Automated Bill Splitting & Payment Reminder App
 
 A comprehensive full-stack web application for splitting bills among friends and automating payment reminders via SMS. Built with React, Flask, PostgreSQL, and Twilio API.
 
