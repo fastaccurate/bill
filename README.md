@@ -218,25 +218,6 @@ eb deploy
 - Update `DATABASE_URL` environment variable
 - Run migrations: `eb ssh` then `flask db upgrade`
 
-## 🧪 **Testing**
-
-### **Backend Testing**
-```bash
-# Run tests
-python -m pytest tests/
-
-# Run with coverage
-python -m pytest tests/ --cov=app
-```
-
-### **Frontend Testing**
-```bash
-# Run tests
-npm test
-
-# Run tests in watch mode
-npm test -- --watch
-```
 
 ## 📁 **Project Structure**
 
@@ -262,49 +243,3 @@ bill-splitting-app/
 │   └── vite.config.js     # Vite configuration
 └── README.md
 ```
-```
-bill-splitting-app/
-├── backend/
-│ ├── app/
-│ │ ├── models/
-│ │ │ - Defines the data structures (User, Group, Expense, Settlement) and how they relate to each other in the database
-│ │ ├── routes/
-│ │ │ - Contains the URL endpoints (blueprints) for authentication, group actions, expense actions, and SMS reminders
-│ │ ├── services/
-│ │ │ - Houses core business logic: one service handles complex bill-splitting math and another sends SMS via Twilio
-│ │ └── extensions.py
-│ │ - Initializes and configures shared Flask extensions (database, migrations, JWT, CORS, password hashing)
-│ ├── config.py
-│ │ - Holds environment-specific settings (database URL, secret keys, Twilio credentials, CORS origins)
-│ ├── run.py
-│ │ - Entry point that creates the Flask app and starts the server
-│ └── requirements.txt
-│ - Lists all Python libraries the backend needs to run (Flask, SQLAlchemy, Twilio, etc.)
-
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ │ - Reusable UI pieces (sidebar layout, loading spinner) used across multiple pages
-│ │ ├── pages/
-│ │ │ - Top-level screens (Dashboard/Home, Login, Group view, Expense view)
-│ │ ├── redux/
-│ │ │ - State management logic (store setup and “slices” for auth, groups, expenses)
-│ │ ├── services/
-│ │ │ - API wrappers that call the backend endpoints and handle tokens/refresh logic
-│ │ └── utils/
-│ │ - Helper functions and constants (date formatting, validation rules, app-wide settings)
-│ ├── package.json
-│ │ - Lists all JavaScript dependencies and scripts for building/running the React app
-│ └── vite.config.js
-│ - Configuration for Vite (development server, API proxy, build options)
-
-└── README.md
-```
-## 🤝 **Contributing**
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
