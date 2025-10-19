@@ -176,48 +176,6 @@ POST /api/reminders/send-bulk-reminders   - Send bulk reminders
 GET  /api/reminders/group/{id}/reminder-candidates - Get reminder candidates
 ```
 
-## 🚢 **Deployment**
-
-### **Frontend Deployment (Vercel)**
-
-1. **Connect to Vercel**
-```bash
-npm install -g vercel
-vercel login
-```
-
-2. **Deploy**
-```bash
-vercel --prod
-```
-
-3. **Environment Variables**
-Set in Vercel dashboard:
-- `VITE_API_URL`: Your backend API URL
-
-### **Backend Deployment (AWS)**
-
-1. **Install AWS CLI and EB CLI**
-```bash
-pip install awsebcli
-```
-
-2. **Initialize Elastic Beanstalk**
-```bash
-eb init
-```
-
-3. **Deploy**
-```bash
-eb create production
-eb deploy
-```
-
-4. **Database Setup**
-- Create RDS PostgreSQL instance
-- Update `DATABASE_URL` environment variable
-- Run migrations: `eb ssh` then `flask db upgrade`
-
 
 ## 📁 **Project Structure**
 
