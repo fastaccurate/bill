@@ -38,10 +38,6 @@ A comprehensive full-stack web application for splitting bills among friends and
 - **Flask-CORS** - Cross-Origin Resource Sharing
 - **Twilio API** - SMS messaging service
 
-### **Deployment**
-- **Frontend**: Vercel (with automatic deployments)
-- **Backend**: AWS Elastic Beanstalk + RDS PostgreSQL
-- **SMS Service**: Twilio API integration
 
 ## 🚀 **Quick Start**
 
